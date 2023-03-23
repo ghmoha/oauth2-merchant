@@ -167,6 +167,11 @@ class SallaUser implements ResourceOwnerInterface
     {
         return $this->getResponseValue('data.merchant.status');
     }
+    
+    public function getStoreDomai()
+    {
+        return $this->getResponseValue('data.merchant.domain');
+    }
 
     /**
      * Get store created at.
